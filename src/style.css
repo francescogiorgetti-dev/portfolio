@@ -71,7 +71,7 @@
 
 @font-face {
   font-family: Roboto Mono, monospace;
-  src: url(../public/fonts/RobotoMono.ttf);
+  src: url(/fonts/RobotoMono.ttf);
 }
 
 /* UNUSED : neon flicker effect */
