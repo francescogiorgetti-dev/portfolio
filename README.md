@@ -3,7 +3,7 @@
 > [!NOTE]
 > This project is not finished! Some parts of code still need polishing.
 
-This is my personal portfolio website, made with React and Tailwind CSS
+This is my personal portfolio website, made with React and Tailwind CSS.
 
 ## URL
 
