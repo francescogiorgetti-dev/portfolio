@@ -26,7 +26,7 @@ Clone the repo and install dependencies:
 
 ```bash
 git clone https://github.com/francescogiorgetti-dev/portfolio.git
-cd your-repo-name
+cd portfolio
 npm install
 npm run dev
 ```
