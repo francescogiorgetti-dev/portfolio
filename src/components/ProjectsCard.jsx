@@ -8,7 +8,7 @@ const ProjectsCard = ({ title, desc = "Lorem ipsum dolor sit amet, consectetur a
                 <div className="relative overflow-hidden rounded-2xl bg-bg px-6 py-6 md:px-8 md:py-8 transition-colors duration-700 ease-in-out hover:bg-gradient-to-r hover:from-verydark hover:to-bg">
                     <div><p className="title text-center mb-6 text-3xl text-light md:text-left">{title}</p></div>
                     <div className="flex flex-col gap-6 mb-8 justify-between lg:flex-row-reverse lg:justify-items-end">
-                        <div className="mb-6 top-0 md:mb-auto transition-transform duration-600 ease-out hover:scale-101 hover:-rotate-y-4 hover:rotate-x-4"><img className="object-cover lg:max-w-105" src={`/images/${img}`}></img></div>
+                        <div className="mb-6 top-0 md:mb-auto transition-transform duration-600 ease-out hover:scale-101 hover:-rotate-y-4 hover:rotate-x-4"><img className="object-cover lg:max-w-105" src={`/img/${img}`}></img></div>
                         <div><p className="light lg:flex-1 text-md font-display text-light font-light font-display lg:text-right lg:text-normal">{desc}</p></div>
                     </div>
                     <div className="flex"><p className="light font-light text-left select-none font-display text-md md:text-normal text-light">Made with:</p>
