@@ -31,7 +31,6 @@ const Projects = () => {
                                     Reichthums froh geworden sind.
                         '
                         icons={['html', 'tailwind', 'nextjs', 'typescript', 'postgre']}
-                        img = 'uwannheader.jpg'
                     />
                     <ProjectsCard
                         title='U-WANN'
@@ -56,6 +55,7 @@ const Projects = () => {
                                     Reichthums froh geworden sind.
                         '
                         icons={['html', 'tailwind', 'react', 'typescript', 'rubyrails', 'postgre']}
+                        img = 'uwannheader.jpg'
                     />
                 </div>
             </div>
