@@ -11,7 +11,7 @@ const Projects = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{
                     once: true,
-                    amount: 0.7
+                    amount: 0.5
                 }}
             >
                 <div className="textContainerRight ml-6 mr-6 mb-25">

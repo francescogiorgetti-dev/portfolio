@@ -10,7 +10,7 @@ const ProjectsCard = ({ title, desc = "Lorem ipsum dolor sit amet, consectetur a
             transition={{ duration: 0.5 }}
             viewport={{
                 once: true,
-                amount: 0.7
+                amount: 0.5
             }}
         >
             <div className="group z-1 transition-transform duration-600 ease-out hover:scale-101">
