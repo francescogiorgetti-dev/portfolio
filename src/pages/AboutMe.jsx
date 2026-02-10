@@ -12,7 +12,7 @@ const AboutMe = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{
                     once: true,
-                    amount: 0.5
+                    amount: 0.7
                 }}
             >
                 <div className="textContainerLeft ml-6 mr-6 mb-25">
