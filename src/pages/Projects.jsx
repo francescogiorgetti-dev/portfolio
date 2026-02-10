@@ -3,6 +3,13 @@ import { motion } from 'framer-motion';
 
 const Projects = () => {
 
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 768);
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
     return (
         <section id="projects" className="scroll-mt-30">
             <motion.div
@@ -11,7 +18,7 @@ const Projects = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{
                     once: true,
-                    amount: 0.2
+                    amount: isMobile ? 0.1 : 0.2
                 }}
             >
                 <div className="textContainerRight ml-6 mr-6 mb-25">

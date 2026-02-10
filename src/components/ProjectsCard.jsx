@@ -3,6 +3,14 @@ import { SVG } from './ui/SVG';
 import { motion } from 'framer-motion';
 
 const ProjectsCard = ({ title, desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiumdod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum", link1, link2, icons, img = "example.jpg" }) => {
+
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 768);
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
+
     return (
         <motion.div
             initial={{ opacity: 0, x: 100 }}
@@ -10,7 +18,7 @@ const ProjectsCard = ({ title, desc = "Lorem ipsum dolor sit amet, consectetur a
             transition={{ duration: 0.5 }}
             viewport={{
                 once: true,
-                amount: 0.5
+                amount: isMobile ? 0.3 : 0.5
             }}
         >
             <div className="group z-1 transition-transform duration-600 ease-out hover:scale-101">
