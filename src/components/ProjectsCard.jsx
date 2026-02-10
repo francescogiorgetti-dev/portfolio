@@ -4,6 +4,15 @@ import { motion } from 'framer-motion';
 
 const ProjectsCard = ({ title, desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiumdod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum", link1, link2, icons, img = "example.jpg" }) => {
     return (
+        <motion.div
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{
+                once: true,
+                amount: 0.5
+            }}
+        >
             <div className="group z-1 transition-transform duration-600 ease-out hover:scale-101">
                 <div className="mb-6 p-[1.5px] bg-gradient-to-t from-verylight to-light rounded-2xl transition-colors duration-700 ease-in-out group-hover:bg-gradient-to-t group-hover:from-light group-hover:to-verylight">
                     <div className="relative overflow-hidden rounded-2xl bg-bg px-6 py-6 md:px-8 md:py-8 transition-colors duration-700 ease-in-out hover:bg-gradient-to-r hover:from-verydark hover:to-bg">
@@ -35,6 +44,7 @@ const ProjectsCard = ({ title, desc = "Lorem ipsum dolor sit amet, consectetur a
                     </div>
                 </div>
             </div>
+        </motion.div>
     );
 }
 
