@@ -4,6 +4,8 @@ import { useEffect, useState } from 'react';
 
 const Projects = () => {
 
+    const [isMobile, setIsMobile] = useState(false);
+    
     useEffect(() => {
         const checkMobile = () => setIsMobile(window.innerWidth < 768);
         checkMobile();
