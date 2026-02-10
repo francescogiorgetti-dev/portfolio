@@ -4,13 +4,19 @@ const Projects = () => {
 
     return (
         <section id="projects" className="scroll-mt-30">
-            <div className="textContainerRight ml-6 mr-6 mb-25">
-                <p className="tiny text-[8px] font-display text-right text-light select-none">You came for these, didn't you?</p>
-                <p className="medium text-3xl mb-6 text-right text-light">My projects</p>
-                <div className="relative">
-                    <ProjectsCard
-                        title='VINTG'
-                        desc='
+            <motion.div
+                initial={{ opacity: 0, x: -100 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ duration: 0.5 }}
+                viewport={{ once: true }}
+            >
+                <div className="textContainerRight ml-6 mr-6 mb-25">
+                    <p className="tiny text-[8px] font-display text-right text-light select-none">You came for these, didn't you?</p>
+                    <p className="medium text-3xl mb-6 text-right text-light">My projects</p>
+                    <div className="relative">
+                        <ProjectsCard
+                            title='VINTG'
+                            desc='
                         Als Zarathustra dreissig Jahr alt war, verliess er seine Heimat und den
                                     See seiner Heimat und ging in das Gebirge. Hier genoss er seines
                                     Geistes und seiner Einsamkeit und wurde dessen zehn Jahr nicht müde.
@@ -30,11 +36,11 @@ const Projects = () => {
                                     Menschen wieder einmal ihrer Thorheit und die Armen einmal ihres
                                     Reichthums froh geworden sind.
                         '
-                        icons={['html', 'tailwind', 'nextjs', 'typescript', 'postgre']}
-                    />
-                    <ProjectsCard
-                        title='U-WANN'
-                        desc='
+                            icons={['html', 'tailwind', 'nextjs', 'typescript', 'postgre']}
+                        />
+                        <ProjectsCard
+                            title='U-WANN'
+                            desc='
                         Als Zarathustra dreissig Jahr alt war, verliess er seine Heimat und den
                                     See seiner Heimat und ging in das Gebirge. Hier genoss er seines
                                     Geistes und seiner Einsamkeit und wurde dessen zehn Jahr nicht müde.
@@ -54,11 +60,12 @@ const Projects = () => {
                                     Menschen wieder einmal ihrer Thorheit und die Armen einmal ihres
                                     Reichthums froh geworden sind.
                         '
-                        icons={['html', 'tailwind', 'react', 'typescript', 'rubyrails', 'postgre']}
-                        img = 'uwannheader.jpg'
-                    />
+                            icons={['html', 'tailwind', 'react', 'typescript', 'rubyrails', 'postgre']}
+                            img='uwannheader.jpg'
+                        />
+                    </div>
                 </div>
-            </div>
+            </motion.div>
         </section>
     );
 }
