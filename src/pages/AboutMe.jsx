@@ -1,4 +1,5 @@
 import Carousel from '../components/ui/Carousel.jsx'
+import { motion } from 'framer-motion';
 
 const AboutMe = () => {
 

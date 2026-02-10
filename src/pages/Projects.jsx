@@ -1,4 +1,5 @@
 import ProjectsCard from '../components/ProjectsCard.jsx'
+import { motion } from 'framer-motion';
 
 const Projects = () => {
 
