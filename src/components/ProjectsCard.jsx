@@ -16,12 +16,12 @@ const ProjectsCard = ({ title, desc = "Lorem ipsum dolor sit amet, consectetur a
 
     return (
         <motion.div
-            initial={isMobile ? {} : { opacity: 0, x: 100 }}
-            whileInView={isMobile ? {} : { opacity: 1, x: 0 }}
-            transition={isMobile ? {} : { duration: 0.5 }}
+            initial={isMobile ? {} : {opacity: 0, x: 100 }}
+            whileInView={isMobile ? {} : {opacity: 1, x: 0 }}
+            transition={isMobile ? {} : {duration: 0.5 }}
             viewport={isMobile ? {} : {
                 once: true,
-                amount: isMobile ? 0.3 : 0.5
+                amount: 0.5
             }}
         >
             <div className="group z-1 transition-transform duration-600 ease-out hover:scale-101">
