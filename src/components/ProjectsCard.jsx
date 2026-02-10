@@ -19,7 +19,7 @@ const ProjectsCard = ({ title, desc = "Lorem ipsum dolor sit amet, consectetur a
             initial={isMobile ? {} : { opacity: 0, x: 100 }}
             whileInView={isMobile ? {} : { opacity: 1, x: 0 }}
             transition={isMobile ? {} : { duration: 0.5 }}
-            viewport={{
+            viewport={isMobile ? {} : {
                 once: true,
                 amount: isMobile ? 0.3 : 0.5
             }}
