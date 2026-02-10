@@ -13,7 +13,7 @@ const EmailForm = () => {
         e.preventDefault();
 
         emailjs
-            .sendForm('service_fkdg0nz', 'template_336cglb', form.current, {
+            .sendForm('service_e9czijd', 'template_336cglb', form.current, {
                 publicKey: '-ZOHpM4TChwasBn4m',
             })
             .then(
@@ -69,7 +69,7 @@ const EmailForm = () => {
                 </div>
                 <div className="mb-6 mt-4">
                     <p className="font-display font-light text-sm select-none text-left">If you prefer, you can always send an email to <span className="text-white transition-all duration-300 ease-in-out hover:hover:text-shadow-sm text-shadow-light">
-                        <a href="mailto:francescogiorgettidev@aol.com">francescogiorgettidev@aol.com</a>
+                        <a href="mailto:francescogiorgetti@eclipso.eu">francescogiorgetti@eclipso.eu</a>
                     </span></p>
                 </div>
             </div>
