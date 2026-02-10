@@ -9,7 +9,10 @@ const Projects = () => {
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
+                viewport={{
+                    once: true,
+                    amount: 0.5
+                }}
             >
                 <div className="textContainerRight ml-6 mr-6 mb-25">
                     <p className="tiny text-[8px] font-display text-right text-light select-none">You came for these, didn't you?</p>

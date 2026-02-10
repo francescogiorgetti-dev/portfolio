@@ -10,7 +10,10 @@ const AboutMe = () => {
                 initial={{ opacity: 0, x: -100 }}
                 whileInView={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
-                viewport={{ once: true }}
+                viewport={{
+                    once: true,
+                    amount: 0.5
+                }}
             >
                 <div className="textContainerLeft ml-6 mr-6 mb-25">
                     <p className="medium text-3xl mb-6 text-light">A little something about me</p>

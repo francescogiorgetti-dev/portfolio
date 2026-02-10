@@ -8,7 +8,10 @@ const ProjectsCard = ({ title, desc = "Lorem ipsum dolor sit amet, consectetur a
             initial={{ opacity: 0, x: -100 }}
             whileInView={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5 }}
-            viewport={{ once: true }}
+            viewport={{
+                once: true,
+                amount: 0.5
+            }}
         >
             <div className="group z-1 transition-transform duration-600 ease-out hover:scale-101">
                 <div className="mb-6 p-[1.5px] bg-gradient-to-t from-verylight to-light rounded-2xl transition-colors duration-700 ease-in-out group-hover:bg-gradient-to-t group-hover:from-light group-hover:to-verylight">
