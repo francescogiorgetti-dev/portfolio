@@ -5,20 +5,22 @@ import { useEffect, useState } from 'react';
 
 const ProjectsCard = ({ title, desc = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiumdod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum", link1, link2, icons, img = "example.jpg" }) => {
 
-    const [isMobile, setIsMobile] = useState(false);
+    const [isMobile, setIsMobile] = useState(
+        typeof window !== 'undefined' ? window.innerWidth < 768 : false
+    );
 
     useEffect(() => {
         const checkMobile = () => setIsMobile(window.innerWidth < 768);
-        checkMobile();
+        checkMobile(); // Still call it to handle resize after mount
         window.addEventListener('resize', checkMobile);
         return () => window.removeEventListener('resize', checkMobile);
     }, []);
 
     return (
         <motion.div
-            initial={isMobile ? {} : {opacity: 0, x: 100 }}
-            whileInView={isMobile ? {} : {opacity: 1, x: 0 }}
-            transition={isMobile ? {} : {duration: 0.5 }}
+            initial={isMobile ? {} : { opacity: 0, x: 100 }}
+            whileInView={isMobile ? {} : { opacity: 1, x: 0 }}
+            transition={isMobile ? {} : { duration: 0.5 }}
             viewport={isMobile ? {} : {
                 once: true,
                 amount: 0.5
