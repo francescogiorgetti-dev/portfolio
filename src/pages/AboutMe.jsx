@@ -1,7 +1,17 @@
 import Carousel from '../components/ui/Carousel.jsx'
 import { motion } from 'framer-motion';
+import { useEffect, useState } from 'react';
 
 const AboutMe = () => {
+
+    const [isMobile, setIsMobile] = useState(false);
+
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.innerWidth < 768);
+        checkMobile();
+        window.addEventListener('resize', checkMobile);
+        return () => window.removeEventListener('resize', checkMobile);
+    }, []);
 
     return (
 
@@ -12,7 +22,7 @@ const AboutMe = () => {
                 transition={{ duration: 0.5 }}
                 viewport={{
                     once: true,
-                    amount: 0.5
+                    amount: isMobile ? 0.3 : 0.5
                 }}
             >
                 <div className="textContainerLeft ml-6 mr-6 mb-25">
