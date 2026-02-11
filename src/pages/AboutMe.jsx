@@ -36,11 +36,12 @@ const AboutMe = () => {
                                         of full stack web-developing, as part of my academic curriculum. What used to be barebones HTML static pages 
                                         steadily transformed into small experiments with PHP forms, JavaScript and MySQL. The more I built, 
                                         the more I loved seeing my ideas come to life on a computer screen.<br></br>
-                                        After graduating, I didn't want to stop learning. I dove deeper into full-stack development, adopting new tools and technologies that I still use today.
+                                        After graduating, I didn't want to stop learning. I dove deeper into full-stack development, adopting new tools 
+                                        and technologies that I still use today.<br></br>
                                         Today, I'm looking forward to putting my knowledge and experience into action with a thrilling and inspiring work 
-                                        experience that can motivate me and give me new opportunities to further expand my realm of expertise.<br></br>
-                                        I can develop full-stack web solutions and have a keen eye for UI/UX design, an ever-evolving tract of web-developing. 
-                                        I always like a good challenge that can put me to the test and can offer me an occasion to grow.
+                                        experience that can motivate me and give me new opportunities to further expand my realm of expertise.
+                                        I can develop full-stack web solutions and have a particular fondness for UI/UX design, 
+                                        but I always like a good challenge that can put me to the test and can offer me an occasion to grow.
                                     </span>
                                     <div className="mt-6 mb-6">
                                         <p className="light mb-6">The tools I use:</p>
