@@ -33,13 +33,13 @@ const AboutMe = () => {
                                 <div className="relative rounded-2xl h-full w-full bg-bg px-6 py-6 md:px-8 md:py-8 transition-colors duration-700 ease-in-out group-hover:bg-gradient-to-r group-hover:from-verydark group-hover:to-bg">
                                     <span className="light text-light">I was born in a town close to the bustling renaissance streets of Florence, 
                                         surrounded by both art and innovation. In my hometown's high school I began approaching the fascinating world 
-                                        of full stack web-developing, as part of my academic curriculum. What used to be barebones HTML static pages 
+                                        of web developing, as part of my curriculum. What used to be barebones HTML static pages 
                                         steadily transformed into small experiments with PHP forms, JavaScript and MySQL. The more I built, 
                                         the more I loved seeing my ideas come to life on a computer screen.<br></br>
                                         After graduating, I didn't want to stop learning. I dove deeper into full-stack development, adopting new tools 
-                                        and technologies that I still use today.<br></br>
+                                        and technologies that I still use today.
                                         Today, I'm looking forward to putting my knowledge and experience into action with a thrilling and inspiring work 
-                                        experience that can motivate me and give me new opportunities to further expand my realm of expertise.
+                                        experience that can motivate me and give me new opportunities to further expand my realm of expertise.<br></br>
                                         I can develop full-stack web solutions and have a particular fondness for UI/UX design, 
                                         and I always like a good challenge that can put me to the test and can offer me an occasion to grow.
                                     </span>
