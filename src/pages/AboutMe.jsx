@@ -31,24 +31,8 @@ const AboutMe = () => {
                         <div className="group transition-transform duration-600 ease-out hover:scale-101 hover:rotate-y-3 hover:rotate-x-3">
                             <div className="p-[1.5px] bg-gradient-to-t from-verylight to-light rounded-2xl transition-colors duration-700 ease-in-out group-hover:bg-gradient-to-t group-hover:from-light group-hover:to-verylight">
                                 <div className="relative rounded-2xl h-full w-full bg-bg px-6 py-6 md:px-8 md:py-8 transition-colors duration-700 ease-in-out group-hover:bg-gradient-to-r group-hover:from-verydark group-hover:to-bg">
-                                    <span className="light text-light">Als Zarathustra dreissig Jahr alt war, verliess er seine Heimat und den
-                                        See seiner Heimat und ging in das Gebirge. Hier genoss er seines
-                                        Geistes und seiner Einsamkeit und wurde dessen zehn Jahr nicht müde.
-                                        Endlich aber verwandelte sich sein Herz,—und eines Morgens stand er mit
-                                        der Morgenröthe auf, trat vor die Sonne hin und sprach zu ihr also:
-                                        „Du grosses Gestirn! Was wäre dein Glück, wenn du nicht Die hättest,
-                                        welchen du leuchtest!
-                                        Zehn Jahre kamst du hier herauf zu meiner Höhle: du würdest deines
-                                        Lichtes und dieses Weges satt geworden sein, ohne mich, meinen Adler
-                                        und meine Schlange.
-                                        Aber wir warteten deiner an jedem Morgen, nahmen dir deinen Überfluss
-                                        ab und segneten dich dafür.
-                                        Siehe! Ich bin meiner Weisheit überdrüssig, wie die Biene, die des
-                                        Honigs zu viel gesammelt hat, ich bedarf der Hände, die sich
-                                        ausstrecken.
-                                        Ich möchte verschenken und austheilen, bis die Weisen unter den
-                                        Menschen wieder einmal ihrer Thorheit und die Armen einmal ihres
-                                        Reichthums froh geworden sind.
+                                    <span className="light text-light">I was born in a town close to the bustling renaissance streets of Florence, surrounded by both art and innovation. In my hometown's high school I began approaching the fascinating world of full stack web-developing, as part of my academic curriculum. What used to be barebones HTML static pages steadily transformed into small experiments with PHP forms, JavaScript and MySQL. The more I built, the more I loved seeing my ideas come to life on a computer screen. After graduating, I didn't want to stop learning. I dove deeper into full-stack development, adopting new tools and technologies that I still use today.
+                                        Today, I'm looking forward to putting my knowledge and experience into action with a thrilling and inspiring work experience that can motivate me and give me new opportunities to further expand my realm of expertise. I can develop full-stack web solutions and have a keen eye for UI/UX design, an ever-evolving tract of web-developing. I always like a good challenge that can put me to the test and can offer me an occasion to grow.
                                     </span>
                                     <div className="mt-6 mb-6">
                                         <p className="light mb-6">The tools I use:</p>
