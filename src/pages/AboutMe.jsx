@@ -41,7 +41,7 @@ const AboutMe = () => {
                                         Today, I'm looking forward to putting my knowledge and experience into action with a thrilling and inspiring work 
                                         experience that can motivate me and give me new opportunities to further expand my realm of expertise.
                                         I can develop full-stack web solutions and have a particular fondness for UI/UX design, 
-                                        but I always like a good challenge that can put me to the test and can offer me an occasion to grow.
+                                        and I always like a good challenge that can put me to the test and can offer me an occasion to grow.
                                     </span>
                                     <div className="mt-6 mb-6">
                                         <p className="light mb-6">The tools I use:</p>
