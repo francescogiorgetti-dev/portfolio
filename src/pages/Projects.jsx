@@ -51,6 +51,7 @@ const Projects = () => {
                                     Reichthums froh geworden sind.
                         '
                             icons={['html', 'tailwind', 'nextjs', 'typescript', 'postgre']}
+                            img='vintgheader.png'
                         />
                         <ProjectsCard
                             title='LISTINA'
